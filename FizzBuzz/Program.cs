@@ -9,32 +9,18 @@ namespace FizzBuzz
         {
 
             var endNumber = 100;
-            Console.WriteLine(FizzBuzz(endNumber));
+            var fizzBuzz = new FizzBuzz();
+            var fizzBuzzArray = fizzBuzz.FizzBuzzArray(endNumber);
 
-        }
-
-        public static string FizzBuzz(int endNumber)
-        {
-            var result = new StringBuilder();
-            for (int i = 1; i < endNumber; i++)
+            for (int i = 1; i < endNumber-2; i++)
             {
-                if ((i % 3 == 0) && (i % 5 == 0))
-                    result.Append("Fizz Buzz, ");
-                else if (i % 5 == 0)
-                    result.Append("Buzz, ");
-                else if (i % 3 == 0)
-                    result.Append("Fizz, ");
-                else result.Append(i + ", ");
+                Console.Write(fizzBuzzArray[i] + ", ");
             }
-            if ((endNumber % 3 == 0) && (endNumber % 5 == 0))
-                result.Append("Fizz Buzz");
-            else if (endNumber % 5 == 0)
-                result.Append("Buzz");
-            else if (endNumber % 3 == 0)
-                result.Append("Fizz");
-            else result.Append(endNumber);
+            Console.Write(fizzBuzzArray[endNumber-1]);
 
-            return result.ToString();
+
         }
+
+       
     }
 }
