@@ -10,8 +10,8 @@ namespace FizzBuzz
     {
         public string[] FizzBuzzArray(int endNumber)
         {
-            var result = new string[endNumber];
-            for (int i = 1; i < endNumber; i++)
+            var result = new string[endNumber+1];
+            for (int i = 1; i <= endNumber; i++)
             {
                 if ((i % 3 == 0) && (i % 5 == 0))
                     result[i] = "Fizz Buzz";

@@ -12,11 +12,11 @@ namespace FizzBuzz
             var fizzBuzz = new FizzBuzz();
             var fizzBuzzArray = fizzBuzz.FizzBuzzArray(endNumber);
 
-            for (int i = 1; i < endNumber-2; i++)
+            for (int i = 1; i < endNumber; i++)
             {
                 Console.Write(fizzBuzzArray[i] + ", ");
             }
-            Console.Write(fizzBuzzArray[endNumber-1]);
+            Console.Write(fizzBuzzArray[endNumber]);
 
 
         }
