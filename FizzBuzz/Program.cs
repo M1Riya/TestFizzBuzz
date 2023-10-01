@@ -7,7 +7,6 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-
             var endNumber = 100;
             var fizzBuzz = new FizzBuzz();
             var fizzBuzzArray = fizzBuzz.FizzBuzzArray(endNumber);
@@ -17,10 +16,6 @@ namespace FizzBuzz
                 Console.Write(fizzBuzzArray[i] + ", ");
             }
             Console.Write(fizzBuzzArray[endNumber]);
-
-
         }
-
-       
     }
 }
